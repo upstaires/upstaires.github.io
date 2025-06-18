@@ -21,11 +21,7 @@ menu:
  归档: /archives/ || fas fa-archive
  标签: /tags/ || fas fa-tags
  分类: /categories/ || fas fa-folder-open
- 列表||fas fa-list:
-   音乐: /music/ || fas fa-music
-   电影: /movies/ || fas fa-video
  留言板: /comments/ || fas fa-envelope-open
- 友链: /link/ || fas fa-link
  关于: /about/ || fas fa-heart
   # Home: / || fas fa-home
   # List||fas fa-list:
@@ -103,7 +99,7 @@ footer_img: transparent
 
 # Website Background
 # Can set it to color or image url
-background: /img/mountains.png
+background: /img/Sun.png
 
 cover:
   # Disable the cover or not
