@@ -12,7 +12,7 @@ timezone: Asia/Shanghai  # 明确时区
 
 nav:
   # Navigation bar logo image
-  logo: /xxxx.png
+  logo: /xxxx.png #我还不知道放什么图片
   display_title: true
   # Whether to fix navigation bar
   fixed: false
