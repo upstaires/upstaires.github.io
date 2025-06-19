@@ -6,7 +6,11 @@
 title: 凌云处  # 更明确的标题
 subtitle: 
 description: "楼上的博客"  # 添加 SEO 描述
-keywords: "C++,Qt,人工智能,机器学习"  # 添加关键词
+keywords:    # 添加关键词
+  - C++
+  - Qt
+  - 人工智能
+  - 机器学习 
 author: Upateirs
 language: zh-CN  # 更精确的语言代码
 timezone: Asia/Shanghai  # 明确时区
@@ -22,7 +26,7 @@ nav:
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 #url: https://github.com/upstaires/upstaires.github.io
-url:  http://localhost:4000
+url:  https://upstaires.github.io/
 permalink: :year/:month/:day/:title/
 ##permalink: posts/:year/:month//upstairs.html  ## 此处可以自己设置
 permalink_defaults:
@@ -77,13 +81,26 @@ index_generator:
   order_by: -date
 
 # Category & Tag
+# 此配置用于设置文章默认分类以及分类和标签的映射关系。当创建新文章时，如果未指定分类，
+# 则会使用 default_category 指定的默认分类。category_map 和 tag_map 可用于将特定的分类或标签名
+# 映射为其他形式，例如在 URL 中使用更合适的名称。创建新页面时，如果页面使用文章布局，
+# 这些配置会影响页面分类和标签的处理；若页面为普通页面，通常不会受这些配置影响。
 default_category: uncategorized
 category_map:
+ "C++": c-plus-plus
 tag_map:
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
-meta_generator: false # 移除Hexo版本信息（安全考虑）
+# 禁用不必要的信息泄露
+meta_generator: false
+
+# 添加安全头配置
+security:
+  strict_transport_security:
+    enable: true
+    max_age: 31536000
+    include_subdomains: true
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
@@ -114,7 +131,22 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: 
-    github: https://github.com/upstaires/upstairs.github.io.git
-    branch: master
-    message: blog
+  repo:
+    github: git@github.com:upstaires/upstaires.github.io.git # 推荐SSH方式
+  branch: master # GitHub默认分支已改为master
+  commit_message: 'Site update: {{ now("YYYY-MM-DD HH:mm:ss") }}'
+
+# 添加资源压缩配置
+filter_optimize:
+  enable: true
+  css:
+    minify: true
+    excludes:
+    - '*.css.map'
+  js:
+    minify: true
+    excludes:
+    - '*.js.map'
+  html:
+    minify: true
+    remove_comments: true
