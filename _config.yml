@@ -7,6 +7,7 @@ title: 凌云处  # 更明确的标题
 subtitle: 
 description: "楼上的博客"  # 添加 SEO 描述
 keywords: "C++,Qt,人工智能,机器学习"  # 添加关键词
+author: Upateirs
 language: zh-CN  # 更精确的语言代码
 timezone: Asia/Shanghai  # 明确时区
 

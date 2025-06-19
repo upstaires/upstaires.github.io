@@ -1,8 +1,23 @@
-on: push
+name: Cleanup Workflow
+
+on:
+  workflow_dispatch:  # 手动触发
+  schedule:
+    - cron: '0 0 * * *'  # 每天 UTC 0 点运行
+
 jobs:
   cleanup:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/delete-artifact@v3
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup GitHub CLI
+        uses: actions/setup-go@v4
         with:
-          name: your-artifact
+          go-version: '1.21'
+
+      - name: Delete Expired Artifacts
+        run: |
+          gh auth login --with-token <<< "${{ secrets.GITHUB_TOKEN }}"
+          gh api repos/${{ github.repository }}/actions/artifacts --jq '.artifacts[] | select(.expired == false) | .id' | xargs -I{} gh api repos/${{ github.repository }}/actions/artifacts/{} -X DELETE

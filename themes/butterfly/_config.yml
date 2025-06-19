@@ -1,19 +1,19 @@
 # --------------------------------------
-# Hexo Butterfly Theme Configuration
-# If you have any questions, please refer to the documentation
-# Chinese: https://butterfly.js.org/
-# English: https://butterfly.js.org/en/
+# Hexo Butterfly 主题配置
+# 如有任何问题，请参考文档
+# 中文文档: https://butterfly.js.org/
+# 英文文档: https://butterfly.js.org/en/
 # --------------------------------------
 
 # --------------------------------------
-# Navigation Settings
+# 导航栏设置
 # --------------------------------------
 
 nav:
-  # Navigation bar logo image
+  # 导航栏 Logo 图片
   logo: 
   display_title: true
-  # Whether to fix navigation bar
+  # 是否固定导航栏
   fixed: false
 
 menu:
@@ -29,33 +29,33 @@ menu:
   #   Movie: /movies/ || fas fa-video
 
 # --------------------------------------
-# Code Blocks Settings
+# 代码块设置
 # --------------------------------------
 
 code_blocks:
-  # Code block theme: darker / pale night / light / ocean / false
+  # 代码块主题: darker / pale night / light / ocean / false
   theme: light
   macStyle: false
-  # Code block height limit (unit: px)
+  # 代码块高度限制 (单位: px)
   height_limit: false
   word_wrap: false
 
-  # Toolbar
+  # 工具栏
   copy: true
   language: true
-  # true: shrink the code blocks | false: expand the code blocks | none: expand code blocks and hide the button
+  # true: 收缩代码块 | false: 展开代码块 | none: 展开代码块并隐藏按钮
   shrink: false
   fullpage: false
 
-# Social media links
-# Formal:
-#   icon: link || the description || color
+# 社交媒体链接
+# 格式:
+#   图标: 链接 || 描述 || 颜色
 social:
   # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
   # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
 
 # --------------------------------------
-# Image Settings
+# 图片设置
 # --------------------------------------
 
 favicon: /img/favicon.png
@@ -64,58 +64,58 @@ avatar:
   img: /img/User.png
   effect: false
 
-# Disable all banner images
+# 禁用所有横幅图片
 disable_top_img: false
 
-# If the banner of page not setting, it will show the default_top_img
+# 如果页面未设置横幅，将显示默认横幅图片
 default_top_img:
     img: /img/mountains.png
 
-# The banner image of index page
+# 首页横幅图片
 index_img: transparent
   #img: /img/Pavilion.png
 
-# The banner image of archive page
+# 归档页面横幅图片
 archive_img: /img/Pavilion.png
 
-# Note: tag page, not tags page
+# 注意: 标签页，不是标签列表页
 tag_img:
 
-# The banner image of tag page, you can set the banner image for each tag
-# Format:
-#  - tag name: xxxxx
+# 标签页横幅图片，你可以为每个标签设置横幅图片
+# 格式:
+#  - 标签名称: 图片地址
 tag_per_img:
 
-# Note: category page, not categories page
+# 注意: 分类页，不是分类列表页
 category_img:
 
-# The banner image of category page, you can set the banner image for each category
-# Format:
-#  - category name: xxxxx
+# 分类页横幅图片，你可以为每个分类设置横幅图片
+# 格式:
+#  - 分类名称: 图片地址
 category_per_img:
 
-# The background image of footer
+# 页脚背景图片
 footer_img: transparent
 
-# Website Background
-# Can set it to color or image url
-background: /img/Sun.png
+# 网站背景
+# 可以设置为颜色或图片地址
+background: /img/Pavilion.png
 
 cover:
-  # Disable the cover or not
+  # 是否禁用封面
   index_enable: true
   aside_enable: true
   archives_enable: true
-  # When cover is not set, the default cover is displayed
+  # 当封面未设置时，显示默认封面
   default_cover:
     # - xxx.jpg
 
-# Replace Broken Images
+# 替换损坏的图片
 error_img:
   flink: /img/friend_404.gif
   post_page: /img/404.jpg
 
-# A simple 404 page
+# 简单的 404 页面
 error_404:
   enable: false
   subtitle: 'Page Not Found'
@@ -143,59 +143,59 @@ post_meta:
     label: true
 
 # --------------------------------------
-# Index page settings
+# 首页设置
 # --------------------------------------
 
-# The top_img settings of home page
-# default: top img - full screen, site info - middle
-# The position of site info, eg: 300px/300em/300rem/10%
+# 首页顶部图片设置
+# 默认: 顶部图片全屏显示，站点信息居中
+# 站点信息位置，例如: 300px/300em/300rem/10%
 index_site_info_top:
-# The height of top_img, eg: 300px/300em/300rem
+# 顶部图片高度，例如: 300px/300em/300rem
 index_top_img_height: #400px
 
-# The subtitle on homepage
+# 首页副标题
 subtitle:
   enable: true
-  # Typewriter Effect
+  # 打字机效果
   effect: true
-  # Customize typed.js
-  # https://github.com/mattboldt/typed.js/#customization
+  # 自定义 typed.js
+# https://github.com/mattboldt/typed.js/#customization
   typed_option:
-  # Source - Call the third-party service API (Chinese only)
-  # It will show the source first, then show the content of sub
-  # Choose: false/1/2/3
-  # false - disable the function
-  # 1 - hitokoto.cn
-  # 2 - yijuzhan.com
-  # 3 - jinrishici.com
+  # 来源 - 调用第三方服务 API (仅限中文)
+# 它将先显示来源，然后显示副标题内容
+# 选择: false/1/2/3
+# false - 禁用此功能
+# 1 - 一言网 (hitokoto.cn)
+# 2 - 一句站 (yijuzhan.com)
+# 3 - 今日诗词 (jinrishici.com)
   source: false
-  # If you close the typewriter effect, the subtitle will only show the first line of sub
+  # 如果你关闭打字机效果，副标题将只显示 sub 中的第一行
   sub:
     - 欲穷千里目，更上一层楼。
     - To see a thousand miles, one must climb to a higher floor.
 
-# Article layout on the homepage
-# 1: Cover on the left, info on the right
-# 2: Cover on the right, info on the left
-# 3: Cover and info alternate between left and right
-# 4: Cover on top, info on the bottom
-# 5: Info displayed on the cover
-# 6: Masonry layout - Cover on top, info on the bottom
-# 7: Masonry layout - Info displayed on the cover
+# 首页文章布局
+# 1: 封面在左，文章信息在右
+# 2: 封面在右，文章信息在左
+# 3: 封面和文章信息左右交替
+# 4: 封面在上，文章信息在下
+# 5: 文章信息显示在封面上
+# 6: 瀑布流布局 - 封面在上，文章信息在下
+# 7: 瀑布流布局 - 文章信息显示在封面上
 index_layout: 1
 
-# Display the article introduction on homepage
-# 1: description
-# 2: both (if the description exists, it will show description, or show the auto_excerpt)
-# 3: auto_excerpt (default)
-# false: do not show the article introduction
+# 在首页显示文章简介
+# 1: 显示文章描述
+# 2: 两者都显示 (如果有描述则显示描述，否则显示自动摘要)
+# 3: 自动摘要 (默认)
+# false: 不显示文章简介
 index_post_content:
   method: 3
-  # If you set method to 2 or 3, the length need to config
+  # 如果你将方法设置为 2 或 3，则需要配置摘要长度
   length: 500
 
 # --------------------------------------
-# Post Settings
+# 文章设置
 # --------------------------------------
 
 toc:
@@ -208,11 +208,25 @@ toc:
   scroll_percent: true
 
 post_copyright:
-  enable: true
+  enable: fasle
   decode: false
   author_href:
-  license: CC BY-NC-SA 4.0
-  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+# 以下列举几种常见的知识共享协议，你可以根据需求选择并取消对应注释
+# 知识共享署名协议 4.0 国际版
+# license: CC BY 4.0
+# license_url: https://creativecommons.org/licenses/by/4.0/
+# 知识共享署名-非商业性使用协议 4.0 国际版
+license: CC BY-NC 4.0
+license_url: https://creativecommons.org/licenses/by-nc/4.0/
+# 知识共享署名-禁止演绎协议 4.0 国际版
+# license: CC BY-ND 4.0
+# license_url: https://creativecommons.org/licenses/by-nd/4.0/
+# 知识共享署名-非商业性使用-禁止演绎协议 4.0 国际版
+# license: CC BY-NC-ND 4.0
+# license_url: https://creativecommons.org/licenses/by-nc-nd/4.0/
+# 知识共享零许可协议 1.0 通用版
+# license: CC0 1.0
+# license_url: https://creativecommons.org/publicdomain/zero/1.0/
 
 # Sponsor/reward
 reward:
@@ -237,10 +251,9 @@ post_edit:
 # Related Articles
 related_post:
   enable: true
-  # Number of posts displayed
-  limit: 6
-  # Choose: created / updated
-  date_type: created
+  limit: 6 # 顯示推薦文章數目
+  date_type: created # or created or updated 文章日期顯示創建日或者更新日
+
 
 # Choose: 1 / 2 / false
 # 1: The 'next post' will link to old post
@@ -294,7 +307,7 @@ aside:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/xxxxxx
+      link: https://github.com/upstaires
   card_announcement:
     enable: false
     content: This is my Blog
@@ -508,12 +521,14 @@ search:
 share:
   # Choose: sharejs / addtoany
   # Leave it empty if you don't need share
-  use: sharejs
+  use: 
+  #use: sharejs
 
   # Share.js
   # https://github.com/overtrue/share.js
   sharejs:
     sites: facebook,twitter,wechat,weibo,qq
+    #sites: facebook,twitter,wechat,weibo,qq
 
   # AddToAny
   # https://www.addtoany.com/
