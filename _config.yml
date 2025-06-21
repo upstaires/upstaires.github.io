@@ -31,8 +31,8 @@ url:  https://upstaires.github.io/
 abbrlink:
   alg: crc32  # 算法：crc16(default) and crc32
   rep: hex    # 进制：dec(default) and hex
-# 使用 abbrlink 作为永久链接格式
-permalink: :abbrlink/
+# 使用 abbrlink 作为永久链接格式，保留基本结构
+permalink: posts/:abbrlink/
 permalink_defaults:
 pretty_urls:
   trailing_index: true  # 移除URL中的index.html
@@ -61,6 +61,10 @@ external_link:
 filename_case: 0
 render_drafts: false
 post_asset_folder: true  # 启用资源文件夹（图片等资源与文章同名目录关联）
+marked:
+  prependRoot: true
+  postAsset: true
+  
 relative_link: true      # 生成相对链接（便于本地预览）
 future: true
 syntax_highlighter: highlight.js
