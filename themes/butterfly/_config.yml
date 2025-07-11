@@ -99,7 +99,15 @@ footer_img: transparent
 
 # 网站背景
 # 可以设置为颜色或图片地址
-background: /img/Pavilion.png
+background:
+ # - /img/mianPage/ChivalrousExpert.png
+ # - /img/mianPage/Clouds.png
+ # - /img/mianPage/Forest.png
+ # - /img/mianPage/Pavilion.png
+ # - /img/mianPage/Sun.png
+  - /img/mianPage/Teenager.png
+ # - /img/mianPage/Tree.png
+ # - /img/mianPage/mountains.png
 
 cover:
   # 是否禁用封面
